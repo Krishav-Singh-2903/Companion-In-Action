@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  scroll-behavior: smooth;
+  --cia-forest: #073b2a;
+  --cia-emerald: #0f5b3f;
+  --cia-leaf: #2f7d56;
+  --cia-gold: #b7791f;
+  --cia-terracotta: #a95632;
+  --cia-cream: #fbf5ea;
+  --cia-sage: #edf4ea;
+  --cia-ink: #13231b;
+  --cia-muted: #667368;
+  --cia-border: #dbe5d6;
+}
+
+body {
+  margin: 0;
+  background: var(--cia-cream);
+  color: var(--cia-ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: #14532d;
+  color: #ffffff;
+}
+
+.brand-surface {
+  background:
+    radial-gradient(circle at top left, rgb(183 121 31 / 0.12), transparent 28rem),
+    linear-gradient(135deg, var(--cia-cream), var(--cia-sage));
+}
+
+.brand-focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.brand-focus:focus-visible {
+  outline-color: var(--cia-gold);
+  box-shadow: 0 0 0 4px rgb(183 121 31 / 0.22);
+}
+
+.photo-library-mask {
+  overflow: hidden;
+}
+
+.photo-library-track {
+  display: flex;
+  width: max-content;
+  margin-left: -7vw;
+  animation: photo-library-scroll 48s linear infinite;
+  will-change: transform;
+}
+
+@keyframes photo-library-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-library-track {
+    animation: none;
+  }
+}
