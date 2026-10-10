@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { publicSiteContent } from "@/config/public-site";
 import { Container } from "@/components/shared/container";
 import { VisualPlaceholder } from "./visual-placeholder";
@@ -9,7 +8,7 @@ export function HomeHero() {
   return (
     <section
       id="top"
-      className="relative isolate overflow-hidden border-b border-emerald-900/10 bg-[linear-gradient(135deg,var(--cia-forest)_0%,#0f5b3f_48%,#1d2f25_100%)] text-white"
+      className="relative isolate overflow-hidden border-b border-emerald-900/10 bg-[linear-gradient(135deg,var(--cia-forest)_0%,#1e5aa8_48%,#102a43_100%)] text-white"
       aria-labelledby="home-hero-title"
     >
       <div
@@ -34,20 +33,6 @@ export function HomeHero() {
           <p className="mt-6 max-w-2xl text-lg leading-8 text-emerald-50/82">
             {hero.summary}
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Link
-              href={hero.primaryAction.href}
-              className="inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--cia-gold)] px-6 text-sm font-semibold text-white shadow-xl shadow-emerald-950/20 transition hover:-translate-y-0.5 hover:bg-[var(--cia-terracotta)] focus:outline-none focus:ring-2 focus:ring-[var(--cia-gold)] focus:ring-offset-4 focus:ring-offset-[var(--cia-forest)]"
-            >
-              {hero.primaryAction.label}
-            </Link>
-            <Link
-              href={hero.secondaryAction.href}
-              className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-white hover:text-[var(--cia-forest)] focus:outline-none focus:ring-2 focus:ring-[var(--cia-gold)] focus:ring-offset-4 focus:ring-offset-[var(--cia-forest)]"
-            >
-              {hero.secondaryAction.label}
-            </Link>
-          </div>
           <dl className="mt-10 grid gap-3 sm:grid-cols-3">
             {[
               ["Started", facts.started],

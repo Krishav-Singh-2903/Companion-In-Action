@@ -20,7 +20,7 @@ export function SiteHeader() {
   const { facts, logo, socialLinks } = publicSiteContent;
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--cia-border)] bg-[rgb(251_245_234/0.96)] shadow-sm shadow-emerald-950/5 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-[var(--cia-border)] bg-[rgb(255_241_232/0.96)] shadow-sm shadow-emerald-950/5 backdrop-blur-xl">
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-[var(--cia-forest)] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
@@ -81,7 +81,7 @@ export function SiteHeader() {
               Companions
             </span>
             <span className="text-lg font-semibold text-[var(--cia-ink)]">
-              in Action
+              In Action
             </span>
           </span>
         </Link>
@@ -126,7 +126,7 @@ export function SiteHeader() {
               href={item.href}
               className={
                 item.label === "Donate"
-                  ? "inline-flex min-h-11 items-center justify-center rounded-full bg-[var(--cia-gold)] px-5 text-sm font-bold text-white shadow-lg shadow-amber-950/15 transition hover:-translate-y-0.5 hover:bg-[var(--cia-terracotta)] focus:outline-none focus:ring-2 focus:ring-[var(--cia-gold)] focus:ring-offset-4 focus:ring-offset-[var(--cia-cream)]"
+                  ? "inline-flex min-h-11 items-center justify-center rounded-full bg-[var(--cia-gold)] px-5 text-sm font-bold text-[var(--cia-forest)] shadow-lg shadow-amber-950/15 transition hover:-translate-y-0.5 hover:bg-[var(--cia-terracotta)] focus:outline-none focus:ring-2 focus:ring-[var(--cia-gold)] focus:ring-offset-4 focus:ring-offset-[var(--cia-cream)]"
                   : "inline-flex min-h-11 items-center justify-center rounded-full border border-[var(--cia-border)] bg-white px-5 text-sm font-bold text-[var(--cia-forest)] transition hover:-translate-y-0.5 hover:border-[var(--cia-leaf)] focus:outline-none focus:ring-2 focus:ring-[var(--cia-gold)] focus:ring-offset-4 focus:ring-offset-[var(--cia-cream)]"
               }
             >

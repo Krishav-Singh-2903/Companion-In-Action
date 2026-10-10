@@ -13,7 +13,7 @@ export function ProjectCard({ title, body, status, href }: ProjectCardProps) {
       <div
         role="img"
         aria-label={`${title} future project media placeholder.`}
-        className="grid min-h-40 place-items-center bg-[linear-gradient(135deg,#064e3b,#0f766e,#f59e0b)] p-5 text-center text-xs font-semibold uppercase tracking-[0.16em] text-white"
+        className="grid min-h-40 place-items-center bg-[linear-gradient(135deg,#102a43,#1e5aa8,#f4c430)] p-5 text-center text-xs font-semibold uppercase tracking-[0.16em] text-white"
       >
         Future media
       </div>

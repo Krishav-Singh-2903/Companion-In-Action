@@ -1,18 +1,50 @@
 @import "tailwindcss";
 
+@theme {
+  --color-emerald-50: #f4f8fc;
+  --color-emerald-100: #e8f0f9;
+  --color-emerald-200: #d0e1f3;
+  --color-emerald-300: #a9c7e8;
+  --color-emerald-700: #1e5aa8;
+  --color-emerald-800: #18497f;
+  --color-emerald-900: #102a43;
+  --color-emerald-950: #102a43;
+  --color-amber-50: #fff1e8;
+  --color-amber-100: #fff1e8;
+  --color-amber-200: #ffe7a0;
+  --color-amber-300: #fbcb19;
+  --color-amber-600: #1e5aa8;
+  --color-amber-700: #102a43;
+  --color-amber-900: #102a43;
+  --color-amber-950: #102a43;
+  --color-lime-100: #fff1e8;
+  --color-orange-600: #1e5aa8;
+  --color-teal-700: #1e5aa8;
+  --color-stone-50: #fff1e8;
+  --color-stone-200: #e7e4df;
+  --color-stone-300: #d3d0ca;
+  --color-stone-400: #a9a7a1;
+  --color-stone-500: #77756f;
+  --color-stone-600: #595852;
+  --color-stone-700: #41413c;
+  --color-stone-800: #292e33;
+  --color-stone-900: #192633;
+  --color-stone-950: #102a43;
+}
+
 :root {
   color-scheme: light;
   scroll-behavior: smooth;
-  --cia-forest: #073b2a;
-  --cia-emerald: #0f5b3f;
-  --cia-leaf: #2f7d56;
-  --cia-gold: #b7791f;
-  --cia-terracotta: #a95632;
-  --cia-cream: #fbf5ea;
-  --cia-sage: #edf4ea;
-  --cia-ink: #13231b;
-  --cia-muted: #667368;
-  --cia-border: #dbe5d6;
+  --cia-forest: #102a43;
+  --cia-emerald: #1e5aa8;
+  --cia-leaf: #1e5aa8;
+  --cia-gold: #f4c430;
+  --cia-terracotta: #1e5aa8;
+  --cia-cream: #fff1e8;
+  --cia-sage: #eaf1f8;
+  --cia-ink: #102a43;
+  --cia-muted: #595852;
+  --cia-border: #d3dce5;
 }
 
 body {
@@ -23,13 +55,18 @@ body {
 }
 
 ::selection {
-  background: #14532d;
+  background: #1e5aa8;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: #1e5aa8;
   color: #ffffff;
 }
 
 .brand-surface {
   background:
-    radial-gradient(circle at top left, rgb(183 121 31 / 0.12), transparent 28rem),
+    radial-gradient(circle at top left, rgb(244 196 48 / 0.16), transparent 28rem),
     linear-gradient(135deg, var(--cia-cream), var(--cia-sage));
 }
 
@@ -40,7 +77,7 @@ body {
 
 .brand-focus:focus-visible {
   outline-color: var(--cia-gold);
-  box-shadow: 0 0 0 4px rgb(183 121 31 / 0.22);
+  box-shadow: 0 0 0 4px rgb(244 196 48 / 0.32);
 }
 
 .photo-library-mask {

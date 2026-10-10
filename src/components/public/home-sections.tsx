@@ -57,6 +57,7 @@ export function HomeSections() {
           <div>
             <SectionHeading
               eyebrow={aboutPreview.eyebrow}
+              eyebrowColor="primary"
               title={aboutPreview.title}
               body={aboutPreview.body}
             />
@@ -85,7 +86,7 @@ export function HomeSections() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-14">
           <article className="border-t border-white/25 pt-5">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-amber-300">
-              01 / {mission.title}
+              {mission.title}
             </p>
             <h2 className="mt-3 font-serif text-4xl leading-tight text-white sm:text-5xl">
               {mission.title}
@@ -96,7 +97,7 @@ export function HomeSections() {
           </article>
           <article className="border-t border-white/25 pt-5">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-amber-300">
-              02 / {vision.title}
+              {vision.title}
             </p>
             <h2 className="mt-3 font-serif text-4xl leading-tight text-white sm:text-5xl">
               {vision.title}
@@ -114,7 +115,7 @@ export function HomeSections() {
         <Container>
           <div className="grid gap-9 lg:grid-cols-[0.88fr_1.12fr] lg:items-center lg:gap-14">
             <div>
-              <p className="text-xl font-bold uppercase tracking-[0.18em] text-amber-700 sm:text-2xl">
+              <p className="text-xl font-bold uppercase tracking-[0.18em] text-[#806400] sm:text-2xl">
                 {areasOfWork.eyebrow}
               </p>
               <h2 className="mt-3 max-w-lg text-xl font-bold leading-tight text-[var(--cia-ink)] sm:text-2xl">
@@ -195,6 +196,7 @@ export function HomeSections() {
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <SectionHeading
             eyebrow="Trust and credibility"
+            eyebrowColor="primary"
             title="Verified organizational information, presented without invented identifiers."
             body="CIA has provided these organizational credentials. Registration numbers, certification numbers, addresses, and other legal identifiers are intentionally not invented."
             titleSize="supporting"
@@ -236,7 +238,7 @@ export function HomeSections() {
 
       <section
         id="featured-projects"
-        className="relative isolate overflow-hidden bg-[linear-gradient(180deg,var(--cia-forest)_0%,#174f40_52%,#78ae93_100%)] pb-10 pt-10 sm:pb-12 sm:pt-12 lg:pb-[4.5rem] lg:pt-[4.75rem]"
+        className="relative isolate overflow-hidden bg-[linear-gradient(180deg,var(--cia-forest)_0%,#1e5aa8_52%,#d7e6f5_100%)] pb-10 pt-10 sm:pb-12 sm:pt-12 lg:pb-[4.5rem] lg:pt-[4.75rem]"
       >
         <div
           aria-hidden="true"
@@ -325,6 +327,7 @@ export function HomeSections() {
           <div>
             <SectionHeading
               eyebrow={campaigns.eyebrow}
+              eyebrowColor="primary"
               title={campaigns.title}
               titleSize="supporting"
               titleWeight="slightly-bolder"
@@ -346,6 +349,7 @@ export function HomeSections() {
       <SectionBand id="stories">
         <SectionHeading
           eyebrow={stories.eyebrow}
+          eyebrowColor="primary"
           title={stories.title}
           titleSize="supporting"
           align="center"
@@ -378,7 +382,7 @@ export function HomeSections() {
               {volunteerCta.action.label}
             </Link>
           </article>
-          <article className="rounded-3xl border border-amber-200 bg-[linear-gradient(135deg,#fff7ed,#fef3c7)] p-8 shadow-xl shadow-amber-950/10">
+          <article className="rounded-3xl border border-amber-200 bg-[linear-gradient(135deg,#fff1e8,#ffe7a0)] p-8 shadow-xl shadow-amber-950/10">
             <h2 className="text-3xl font-semibold text-stone-950">
               {donationCta.title}
             </h2>
@@ -397,6 +401,7 @@ export function HomeSections() {
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
           <SectionHeading
             eyebrow={socialPresence.eyebrow}
+            eyebrowColor="primary"
             title={socialPresence.title}
             body={socialPresence.body}
           />

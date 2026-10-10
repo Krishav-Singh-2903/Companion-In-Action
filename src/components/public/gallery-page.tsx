@@ -56,7 +56,7 @@ export function GalleryPage() {
                 <div
                   role="img"
                   aria-label={`${label}. Placeholder media slot, not an actual NGO image.`}
-                  className={`grid place-items-center bg-[linear-gradient(135deg,#d9e8dd,#f3e6ce)] p-4 text-center text-sm font-semibold text-stone-700 ${index % 2 === 0 ? "aspect-[4/3]" : "aspect-[3/4]"}`}
+                  className={`grid place-items-center bg-[linear-gradient(135deg,#d7e6f5,#fff1e8)] p-4 text-center text-sm font-semibold text-stone-700 ${index % 2 === 0 ? "aspect-[4/3]" : "aspect-[3/4]"}`}
                 >
                   Media slot {index + 1}
                 </div>

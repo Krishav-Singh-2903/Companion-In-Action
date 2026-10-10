@@ -44,7 +44,7 @@ export function SiteFooter() {
               </Link>
               <Link
                 href="/donate"
-                className="inline-flex min-h-11 items-center justify-center rounded-full bg-[var(--cia-gold)] px-5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-[var(--cia-terracotta)] focus:outline-none focus:ring-2 focus:ring-[var(--cia-gold)] focus:ring-offset-4 focus:ring-offset-[var(--cia-forest)]"
+                className="inline-flex min-h-11 items-center justify-center rounded-full bg-[var(--cia-gold)] px-5 text-sm font-bold text-[var(--cia-forest)] transition hover:-translate-y-0.5 hover:bg-[var(--cia-terracotta)] focus:outline-none focus:ring-2 focus:ring-[var(--cia-gold)] focus:ring-offset-4 focus:ring-offset-[var(--cia-forest)]"
               >
                 Donate
               </Link>

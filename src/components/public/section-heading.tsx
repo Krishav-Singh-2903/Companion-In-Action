@@ -10,6 +10,7 @@ type SectionHeadingProps = {
   eyebrowProminent?: boolean;
   eyebrowSmaller?: boolean;
   eyebrowNoWrapOnDesktop?: boolean;
+  eyebrowColor?: "default" | "primary";
 };
 
 export function SectionHeading({
@@ -23,7 +24,8 @@ export function SectionHeading({
   bodySize = "base",
   eyebrowProminent = false,
   eyebrowSmaller = false,
-  eyebrowNoWrapOnDesktop = false
+  eyebrowNoWrapOnDesktop = false,
+  eyebrowColor = "default"
 }: SectionHeadingProps) {
   const alignment = align === "center" ? "mx-auto text-center" : "";
   const titleClass = inverted ? "text-white" : "text-stone-950";
@@ -41,11 +43,13 @@ export function SectionHeading({
       ? "text-xl font-bold sm:text-2xl"
       : "text-2xl font-bold sm:text-3xl"
     : "text-sm font-semibold";
+  const eyebrowColorClass =
+    eyebrowColor === "primary" ? "text-[#806400]" : "text-amber-700";
 
   return (
     <div className={`max-w-3xl ${alignment}`}>
       {eyebrow ? (
-        <p className={`${eyebrowClass} uppercase tracking-[0.18em] text-amber-700 ${eyebrowNoWrapOnDesktop ? "xl:whitespace-nowrap" : ""}`}>
+        <p className={`${eyebrowClass} uppercase tracking-[0.18em] ${eyebrowColorClass} ${eyebrowNoWrapOnDesktop ? "xl:whitespace-nowrap" : ""}`}>
           {eyebrow}
         </p>
       ) : null}
